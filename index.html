@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rajalakshmi Portfolio</title>
+
+  <style>
+    body {
+      font: timesnewroman;
+      margin: 0;
+      padding: 0;
+      background: #fdf6f6;
+      /* Light mode background */
+      color: #444;
+      transition: all 0.3s ease;
+    }
+
+    /* === Dark Mode === */
+    body.dark {
+      background: #1e1e1e;
+      color: #e8e8e8;
+    }
+
+    /* === Header === */
+    header {
+      background: #a8dadc;
+      /* Light mode pastel teal */
+      padding: 2rem;
+      color: #fff;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    body.dark header {
+      background: #2d2d2d;
+    }
+
+    .profile-header {
+      display: flex;
+      gap: 20px;
+    }
+
+    .profile-header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 0;
+      /* Square photo */
+      border: 4px solid #fff;
+    }
+
+    .profile-header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .profile-header p {
+      margin: 5px 0 0;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* === Dark Mode Toggle Button === */
+    .toggle-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: #fff;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    body.dark .toggle-btn {
+      background: #444;
+      color: #fff;
+    }
+
+    /* === Container === */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: #f8edeb;
+      /* Light pastel */
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+      transition: background 0.3s;
+    }
+
+    body.dark section {
+      background: #2d2d2d;
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
+    }
+
+    section h2 {
+      color: #6d6875;
+      margin-bottom: 1rem;
+    }
+
+    body.dark section h2 {
+      color: #f1faee;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* === Resume Button === */
+    .resume-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #bde0fe;
+      color: #444;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .resume-btn hover {
+      background: #89c2d9;
+    }
+
+    body.dark .resume-btn {
+      background: #444;
+      color: #fff;
+    }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e8e8e4;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      margin-top: 2rem;
+      transition: background 0.3s;
+    }
+
+    body.dark footer {
+      background: #2d2d2d;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header>
+
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+    <div class="profile-header">
+
+      <img src="https://i.postimg.cc/h4QT4mJp/IMG-20250830-160627.jpg" alt="Profile Photo">
+
+      <div>
+
+        <h1>Rajalakshmi R</h1>
+
+        <p>Student</p>
+
+        <nav>
+          <a href="#about">About</a>
+
+          <a href="#education">Education</a>
+          
+          <a href="#certificates">Certificates</a>
+
+          <a href="#skills">Skills</a>
+
+          <a href="#projects">Projects</a>
+
+          <a href="#contact">Contact</a>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- Main Content -->
+
+  <div class="container">
+
+    <section id="about">
+
+      <h2>About Me</h2>
+
+      <p>I am a student learning web development.
+
+        I enjoy building digital experiences that are user-friendly and visually appealing.</p>
+
+    </section>
+
+    <section id="education">
+
+      <h2>Education</h2>
+
+        <p><strong>BCA (Computer Application)</strong> – Madras University (2024 – 2027 Present)</p>
+
+    </section>
+    
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <ul>
+        <li><strong>Web Development Certification</strong> – IBM Skill Build (2025)</li>
+
+        <li><strong>Cloud Computing</strong> - NPTEL (2025)</li>
+        
+        <li><strong>Introduction to Programming in Python</strong> - Harvard X (2025)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+
+      <h2>Skills</h2>
+
+      <ul>
+
+        <li>Python</li>
+
+        <li>HTML</li>
+
+        <li>CSS</li>
+
+        <li>C++</li>
+
+        <li>Java-Script</li>
+
+        <li>Canva</li>
+        
+        <li>Cloud Computing</li>
+
+      </ul>
+
+    </section>
+
+    <section id="projects">
+
+      <h2>Projects</h2>
+
+      <p><strong>Portfolio Website</strong> – Personal portfolio to showcase my work.</p>
+
+    </section>
+    
+    <section>
+      <h2>Download Resume</h2>
+      <a href="https://raw.githubusercontent.com/Rajalakshmi2696/Resume.pdf/main/resume.pdf" download="My_Resume.pdf" target="_blank" class="resume-btn">📄 Download Resume
+
+      </a>
+    </section>
+
+    <section id="contact">
+
+      <h2>Contact</h2>
+
+      <p>Phone: +91 9176437003</p>
+
+      <p>Email: <a href="mailto: rajalakshmi26096@gmail.com">rajalakshmi26096@gmail.com</a></p>
+
+      <p>GitHub: <a href="https://github.com/Rajalakshmi2696" target="_blank">github.com/Rajalakshmi2696</a></p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <p>&copy; 2025 Rajalakshmi R. All rights reserved.</p>
+
+  </footer>
+
+  <!-- JavaScript for Dark Mode -->
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+      const btn = document.querySelector('.toggle-btn');
+      if (document.body.classList.contains('dark')) {
+        btn.textContent = "☀️ Light Mode";
+      } else {
+        btn.textContent = "🌙 Dark Mode";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
